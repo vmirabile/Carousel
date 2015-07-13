@@ -1,0 +1,27 @@
+1)  How to read and implement Olapic API
+    How to pull data from API
+
+2)  Design (KISS) Simple, focus on API and less on technical
+
+Decided to use jquery because it allows for normalization as its API allows me to make one call for all browsers.
+
+
+a)(Design) Handing image Requests.  Fewer requests the better.  
+Load carousel pictures as you need (i/o loading all images)
+Load Pictures to right and left of images already loaded into carousel
+
+b)As you scroll through (already loaded) carousel images, you do not want to request same images again.
+Don't delete images that were loaded.  Build list as you go.
+
+3)  Technical
+
+
+Notes:
+
+http://rest.photorank.me/customers/215757/media/photorank?auth_token=0a40a13fd9d531110b4d6515ef0d6c529acdb59e81194132356a1b8903790c18
+rest.photorank.me
+ID: 215757
+
+Pull using Jquery
+Parse out normal URLs
+Build Carousel
